@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laravel-app
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: laravel-app
+  template:
+    metadata:
+      labels:
+        app: laravel-app
+    spec:
+      containers:
+      - name: laravel-app
+        image: <dockerhub-username>/laravel-app:latest
+        ports:
+        - containerPort: 8000
