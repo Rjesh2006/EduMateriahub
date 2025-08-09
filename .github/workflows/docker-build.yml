@@ -3,6 +3,8 @@ name: CI - Build, Push Docker image, and Update Helm Chart
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'helm/laravel-web-app-chart/values.yaml'  # 🚀 Prevents infinite loop
   workflow_dispatch:
 
 env:
