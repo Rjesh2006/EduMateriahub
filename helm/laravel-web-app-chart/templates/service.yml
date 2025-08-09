@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: laravel-service
 spec:
-  type: LoadBalancer  # changed from ClusterIP
+  type: ClusterIP  # changed from ClusterIP
   selector:
     app: laravel-app
   ports:
