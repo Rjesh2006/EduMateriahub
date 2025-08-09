@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: laravel-app
-        image: <dockerhub-username>/laravel-app:latest
+        image: rk9718471899/laravel-app:latest
         ports:
         - containerPort: 8000

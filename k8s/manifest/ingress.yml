@@ -2,12 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: laravel-ingress
-  namespace: laravel-app
   annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-    - host: mylaravelapp.example.com  # Your domain
+    - host: matarialhub.com  # must be lowercase
       http:
         paths:
           - path: /
