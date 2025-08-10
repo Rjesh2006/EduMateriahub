@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx                # ✅ New-style, recommended
   rules:
-    - host: matarialhub.com
+    - host: lara.com
       http:
         paths:
           - path: /
