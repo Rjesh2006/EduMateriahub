@@ -8,7 +8,7 @@ image:
   repository: rk9718471899/laravel-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "7480d0090c295a11cb7de33cfa74ecab5b4f962a"
+  tag: "14646f88a6cc6de007224b5acd28c5d8e8a103a6"
 
 ingress:
   enabled: false
